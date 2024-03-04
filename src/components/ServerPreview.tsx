@@ -18,7 +18,7 @@ const ServerPreview: FC<ServerPreviewProp> = (
                 after:absolute after:top-0 after:bg-[#161920] 
                 after:w-full after:h-full after:opacity-55 after:-z-10
             `}
-            style={{backgroundImage:`url(${background.src})`}}
+            style={{backgroundImage:`url(${background.src})`, backgroundPosition: 'bottom'}}
         >
             <div className='pl-20 pt-14'>
                 <h1 className='text-8xl text-white'>

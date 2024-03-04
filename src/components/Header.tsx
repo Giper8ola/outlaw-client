@@ -5,15 +5,15 @@ import Menu from "@/components/Menu";
 
 const Header = () => {
     return (
-        <div className='bg-[#161920] h-[25vh]'>
+        <div className='bg-[#161920] h-[24vh]'>
             <div className='grid content-between h-full'>
-                <div className='flex items-center justify-between text-white pt-8 max-w-[1760px] w-full mx-auto'>
+                <div className='flex items-center justify-between text-white pt-7 max-w-[1760px] w-full mx-auto'>
                     <div className='flex items-center'>
                         <Image
                             src='/logo.svg'
                             alt='logo'
-                            width={87}
-                            height={87}
+                            width={80}
+                            height={80}
                         />
                         <header className='text-4xl font-bold '>Outlaw / Craft</header>
                     </div>
@@ -23,7 +23,7 @@ const Header = () => {
                     <div className='text-lg underline decoration-1 text-[#3D3D3D] font-bold'>
                         Лицензионное соглашение
                     </div>
-                    <button className='bg-[#4E99BC] px-14 py-5 font-bold text-xl'>
+                    <button className='bg-[#4E99BC] px-12 py-4 font-bold text-lg'>
                         НАЧАТЬ ИГРАТЬ
                     </button>
                 </div>
