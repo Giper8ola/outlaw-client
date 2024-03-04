@@ -13,10 +13,10 @@ const Menu = () => {
                     <li
                         className='flex items-center font-medium text-white relative px-4'
                         key={el.title}
-                        onClick={() => setSelectedTab(el)
-                    }>
+                        onClick={() => setSelectedTab(el)}
+                    >
                         {el === selectedTab ? (
-                            <motion.div className="absolute h-[2px] w-full bg-red-600 left-0 -top-[2px]" layoutId="underline" />
+                            <motion.div className="absolute h-[2px] w-full bg-[#4E99BC] left-0 -top-[2px]" layoutId="underline" />
                         ) : null}
                         <Link href={el.link}>
                             {el.title}

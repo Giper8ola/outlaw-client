@@ -5,9 +5,9 @@ import Menu from "@/components/Menu";
 
 const Header = () => {
     return (
-        <div className='bg-[#161920]'>
-            <div className=''>
-                <div className='flex items-center justify-between text-white pt-8 pb-12 max-w-full w-[1760px] mx-auto'>
+        <div className='bg-[#161920] h-[25vh]'>
+            <div className='grid content-between h-full'>
+                <div className='flex items-center justify-between text-white pt-8 max-w-[1760px] w-full mx-auto'>
                     <div className='flex items-center'>
                         <Image
                             src='/logo.svg'
