@@ -1,6 +1,7 @@
-import back from '../components/assets/zombie.png'
+import back from './assets/zombie.png'
 import slide from './assets/armia.svg'
 import model from './assets/model.svg'
+
 export const MAIN_PAGE_DATA = {
     count: 2,
     data: [

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Comfortaa } from "next/font/google";
+import { Tektur } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const inter = Comfortaa({ subsets: ["latin"], weight: ['400', '500', '600'] });
+const inter = Tektur({ subsets: ["latin"], weight: ['400', '500', '600', '700'] });
 
 export const metadata: Metadata = {
     title: "OutlawCraft",
