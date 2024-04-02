@@ -1,18 +1,23 @@
-import React from 'react';
-import Menu from "@/components/Menu";
+'use client'
+
+import React, {useState} from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/components/Logo";
 import ServerInfo from "@/components/ServerInfo";
+import Navigation from "@/components/Navigation";
+import Menu from "@/components/Menu";
 
-const HeaderBottom = ({curWidth}: {curWidth: number}) => {
+const HeaderBottom = ({curWidth, pageHeight}: {curWidth: number, pageHeight: number}) => {
+    const [visible, setVisible] = useState(false)
+
     return (
         <div className='flex justify-between'>
             {
                 curWidth > 1290
                 &&
                 <div className='flex items-stretch justify-between grow border-t-2 border-[#474747] px-20'>
-                    <Menu/>
+                    <Navigation/>
                     {
                         curWidth > 1800
                         &&
@@ -42,13 +47,13 @@ const HeaderBottom = ({curWidth}: {curWidth: number}) => {
                 {
                     curWidth <= 1290 && <Logo/>
                 }
-                <div className='flex'>
+                <div className='flex relative'>
                     {
                         curWidth >= 740
                         &&
                         <ServerInfo/>
                     }
-                    <button className='w-20 h-20 flex justify-center items-center bg-[#4D4D4D]'>
+                    <button className='w-20 h-20 flex justify-center items-center bg-[#4D4D4D]' onClick={() => setVisible(!visible)}>
                         {
                             curWidth > 1500
                                 ?
@@ -68,6 +73,10 @@ const HeaderBottom = ({curWidth}: {curWidth: number}) => {
 
                         }
                     </button>
+                    <Menu
+                        height={pageHeight}
+                        isVisible={visible}
+                    />
                 </div>
             </div>
         </div>

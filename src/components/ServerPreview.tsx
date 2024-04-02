@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
-import {ServerPreviewProp} from "@/utils/types";
+import {ServerPreviewProps} from "@/utils/types";
 import Image from "next/image";
 import GallerySlider from "@/components/GallerySlider";
 
-const ServerPreview: FC<ServerPreviewProp> = (
+const ServerPreview: FC<ServerPreviewProps> = (
     {
        title,
        description,
@@ -32,7 +32,7 @@ const ServerPreview: FC<ServerPreviewProp> = (
                     {title}
                 </h1>
                 <p className='
-                    max-w-[600px] w-full pt-16 text-xl font-medium text-[#575757] max-[1500px]:max-w-[500px]
+                    max-w-[600px] w-full pt-5 text-xl font-medium text-[#575757] max-[1500px]:max-w-[500px]
                     max-[1100px]:text-center max-[1100px]:text-[3vw] max-[1100px]:text-white max-[1100px]:leading-normal
                     max-[1100px]:max-w-[700px] max-[770px]:text-2xl max-[770px]:px-10
                 '>

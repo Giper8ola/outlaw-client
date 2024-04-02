@@ -4,6 +4,6 @@
 
 @layer components {
     .wrapper {
-        @apply max-w-[1760px] w-full mx-auto
+        @apply max-w-[1760px] w-full mx-auto max-[1800px]:px-6
     }
 }

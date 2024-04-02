@@ -2,7 +2,7 @@ import ServerPreview from "@/components/ServerPreview";
 import {MAIN_PAGE_DATA} from "@/utils/data";
 export default function Home() {
     return (
-        <div className='h-[76vh] flex flex-col relative max-[1291px]:h-[calc(100vh-80px)]'>
+        <div className='flex flex-col relative max-[1291px]:h-[calc(100vh-80px)] self-stretch h-full'>
             {
                 MAIN_PAGE_DATA.data.map((el) => (
                     <ServerPreview
